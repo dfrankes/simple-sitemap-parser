@@ -23,7 +23,7 @@ await SimpleSitemapParser.parser({
 		// all urls items
 	},
 	'onError': async(error, urls) => {
-        // the error, and list of parsed urls
+        // if something goes wrong while parsing, this function will be triggered, urls will contain all the parsed urls that where succesfully before something went wrong.
 	}
 });
 ```
