@@ -19,11 +19,11 @@ await SimpleSitemapParser.parser({
 	'validateUrl': async(url) => {
 		return url;
 	},
-	'onSuccess': async(items) => {
-		// all parsed items
+	'onSuccess': async(urls) => {
+		// all urls items
 	},
-	'onError': async(error, items) => {
-        // the error, and list of parsed items
+	'onError': async(error, urls) => {
+        // the error, and list of parsed urls
 	}
 });
 ```
